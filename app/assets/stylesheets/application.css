@@ -38,6 +38,7 @@ body {
   position: relative;
   margin-bottom: 80px;
   border-bottom: 1px solid;
+  padding-bottom: 15px;
 }
 
 .header h1 {
