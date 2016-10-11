@@ -22,13 +22,15 @@
           <!-- Your code here -->
 					<% if current_user %> 
             <ul> 
-              <li><%= current_user.first_name + " " + current_user.last_name %></li> 
+              <%= link_to user_path(:id), class: "user-pro" do %>
+                <li><%= current_user.first_name + " " + current_user.last_name %></li> 
+              <% end %>
               <li><%= link_to "Log out", logout_path, method: "delete" %></li> 
             </ul> 
           <% else %> 
             <ul> 
               <li><%= link_to "Login", 'login' %></a></li> 
-              <li><%= link_to "Signup", 'signup' %></a></li> 
+              <li><%= link_to "Signup", 'signup' %></a></li>
             </ul> 
           <% end %>
 

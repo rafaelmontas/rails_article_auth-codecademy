@@ -35,15 +35,15 @@ body {
 /*    HEADER    */
 
 .header {
-  height: 200px;
   position: relative;
+  margin-bottom: 80px;
+  border-bottom: 1px solid;
 }
 
 .header h1 {
   font-size: 72px;
-  height: 200px;
-  line-height: 200px;
   margin: 0 50px 0;
+  display: inline-block;
 }
 
 .header a {
@@ -61,7 +61,15 @@ body {
   right: 25px;
   text-align: right;
   top: 25px;
+  margin-top: 15px;
 }
+
+.nav ul .user-pro {
+  	padding: 5px 20px;
+    border: 1px solid;
+    margin-right: 12px;
+    background: rgba(125, 120, 120, 0.25);
+  }
 
 .nav ul li {
   display: inline-block;
@@ -203,6 +211,7 @@ form textarea {
     right: 15px;
     top: 15px;
   }
+
 
   .nav ul li a {
     min-width: 45px;

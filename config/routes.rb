@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   #Users controller (Signup setup)
   resources :users
   get "/signup" => "users#new"
-
+  
   #Sessions controller rutes (Login setup)
   get "/login" => "sessions#new"
   post "/login" => "sessions#create"
