@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-	before_action :require_user, only: [:show]
+	before_action :require_user, only: [:show, :new, :edit]
 	before_action :require_author, only: [:edit, :update, :destroy]
 	def index
 		@articles = Article.all
@@ -36,6 +36,13 @@ class ArticlesController < ApplicationController
 
 	end
 
+	def destroy
+		@article = Article.find(params[:id])
+		@article.destroy
+		redirect_to articles_path
+	end
+
+	private
 	def article_params
 		params.require(:article).permit(:title, :author, :body)
 	end
