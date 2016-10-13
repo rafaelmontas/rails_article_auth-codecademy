@@ -163,7 +163,7 @@ body {
 }
 
 /*      FORMS     */
-.login .container, .signup .container, .update-article .container {
+.login .container, .signup .container, .update-article .container, .new-article .container {
   width: 600px;
   margin: 0 50px 50px;
 }
@@ -196,7 +196,7 @@ form input.btn-submit:focus {
 }
 
 form textarea {
-  min-height: 400px;
+  min-height: 200px;
 }
 
 /**********    
