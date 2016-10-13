@@ -7,6 +7,14 @@
 
     <!-- Your code here -->
 
+    <% if current_user && current_user.author? %> 
+		  <p class="article-edit"> 
+		    <%= link_to "Edit article", edit_article_path(@article.id) %> 
+		  </p> 
+		  <p class="article-edit"> 
+		    <%= link_to "Delete article", article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %> 
+		  </p> 
+		<% end %>
     
   </div>
 </div>

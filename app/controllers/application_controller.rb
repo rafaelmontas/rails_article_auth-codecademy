@@ -12,4 +12,10 @@ class ApplicationController < ActionController::Base
 	def require_logged_out
 		redirect_to "/" unless current_user == nil
 	end
+
+	def require_author
+		redirect_to "/" unless 
+		current_user.author?
+	end
+
 end
