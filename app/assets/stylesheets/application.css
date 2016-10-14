@@ -199,6 +199,12 @@ form textarea {
   min-height: 200px;
 }
 
+
+.profile-img {
+	width: 200px;
+	border-radius: 50%;
+}
+
 /**********    
   MEDIA QUERIES    
 **********/
